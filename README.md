@@ -25,7 +25,7 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Ayuuu-tech&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
   <br>
-  <img src="https://github-readme-streak-stats.vercel.app/?user=Ayuuu-tech&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Ayuuu-tech&theme=tokyonight" alt="GitHub Streak" />
 </p>
 
 
