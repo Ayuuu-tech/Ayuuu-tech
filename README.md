@@ -14,17 +14,19 @@
 
 ## 🧰 Tech Stack:
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,html,css,js,git,vscode,github" />
+  <img src="https://skillicons.dev/icons?i=python,html,css,js,git,vscode,github" alt="Tech Stack" />
 </p>
+
 
 ---
 
 ## 📊 GitHub Stats:
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AyushmaanYadav&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Ayuuu-tech&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
   <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AyushmaanYadav&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.vercel.app/?user=Ayuuu-tech&theme=tokyonight" alt="GitHub Streak" />
 </p>
+
 
 ---
 
