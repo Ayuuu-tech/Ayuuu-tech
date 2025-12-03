@@ -50,7 +50,7 @@ UI/UX • Scalability • Dashboards • Responsive Design
 
 ---
 
-## 🚀 Featured Projects (Premium Cards)
+## 🚀 Featured Projects 
 
 ### 🔷 **Laundry Buddy – Full-Stack Laundry Automation**
 A complete digital laundry management system for college students.  
@@ -67,7 +67,7 @@ Python voice assistant for productivity automation.
 
 ---
 
-## 📈 GitHub Analytics (Premium Theme)
+## 📈 GitHub Analytics 
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayuuu-tech&theme=tokyo-night&area=true&hide_border=true" width="95%">
