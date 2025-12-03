@@ -1,7 +1,4 @@
-<!-- ULTRA PREMIUM HEADER -->
-<p align="center">
-  <img src="https://i.imgur.com/kG5xkF0.png" width="90%" alt="banner"/>
-</p>
+
 
 <h1 align="center">✨ Ayushmaan Yadav ✨</h1>
 <h3 align="center">Full-Stack Developer • Python Developer • Tech Explorer</h3>
@@ -96,8 +93,6 @@ Python voice assistant for productivity automation.
 
 ---
 
-<p align="center">
-  <img src="https://i.imgur.com/eFZglvY.gif" width="250" alt="stars animation"/>
-</p>
+
 
 <h3 align="center">✨ Building. Learning. Growing. Every Day. ✨</h3>
