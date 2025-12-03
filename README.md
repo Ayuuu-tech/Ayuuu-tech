@@ -19,7 +19,7 @@ Currently growing in **DSA, Backend Engineering, Architecture Design, and Cloud 
 
 ---
 
-## 🛠️ Tech Stack (Ultra Premium Icons)
+## 🛠️ Tech Stack 
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,java,js,html,css,bootstrap,react,nodejs,express,mongodb,mysql,git,github,vscode,postman,figma&theme=light" />
