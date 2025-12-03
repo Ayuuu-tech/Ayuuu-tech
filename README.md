@@ -1,69 +1,103 @@
-<h1 align="center">Hi 👋, I'm Ayushmaan Yadav</h1>
-<h3 align="center">🚀 Aspiring Software Developer | Full-Stack Learner | Python Enthusiast</h3>
+<!-- ULTRA PREMIUM HEADER -->
+<p align="center">
+  <img src="https://i.imgur.com/kG5xkF0.png" width="90%" alt="banner"/>
+</p>
 
-<img align="right" alt="Coding" width="300" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
+<h1 align="center">✨ Ayushmaan Yadav ✨</h1>
+<h3 align="center">Full-Stack Developer • Python Developer • Tech Explorer</h3>
 
----
-
-## 🌟 About Me
-- 🔭 Working on **Full-Stack Development & Python Projects**
-- 🌱 Currently learning **DSA | JavaScript | Backend Systems**
-- 🧠 Interested in **UI/UX, Automation, and Scalable Systems**
-- 📫 Reach me at **ayushmaan.ggn@gmail.com**
-- ⚡ Fun fact: I enjoy solving logic puzzles & debugging tricky errors!
-
----
-
-## 🧰 Tech Stack
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,js,html,css,bootstrap,nodejs,express,mongodb,mysql,git,github,vscode,figma" />
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300">
 </p>
 
 ---
 
-## 🛠️ Technical Skills
+## 🎯 About Me
 
-### **Full-Stack Web Development**
-- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap, React  
-- **Backend:** Node.js, Express.js, Python (Flask/Django)  
+I’m a passionate **Full-Stack Developer** who loves building scalable apps, smooth UI/UX, and meaningful digital products.  
+Currently growing in **DSA, Backend Engineering, Architecture Design, and Cloud Technologies**.
+
+✨ **My Mission:** Build products that make life easier.  
+🔥 **My Drive:** Learn → Build → Improve → Repeat.
+
+---
+
+## 🛠️ Tech Stack (Ultra Premium Icons)
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,java,js,html,css,bootstrap,react,nodejs,express,mongodb,mysql,git,github,vscode,postman,figma&theme=light" />
+</p>
+
+---
+
+## 💡 Technical Skills
+
+### **Full-Stack Development**
+- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap, React
+- **Backend:** Node.js, Express.js, Python (Flask/Django)
 - **Database:** SQL, MySQL, MongoDB  
 - **Version Control:** Git, GitHub  
 
 ### **Programming Languages**
 Python, JavaScript, C, C++, Java  
 
-### **Python Libraries**
+### **Python Ecosystem**
 Pandas, NumPy, Matplotlib, Seaborn  
 
-### **Developer Tools**
-VS Code, Figma, Jupyter Notebook  
+### **Tools**
+VS Code, Jupyter Notebook, Figma, Postman  
 
-### **Core Competencies**
-API Integration, UI/UX Fundamentals,  
-Automation Scripts, Data Handling, Dashboards,  
-Responsive Web Design  
+### **Core Expertise**
+API Integration • Authentication • Automation  
+UI/UX • Scalability • Dashboards • Responsive Design  
 
 ---
 
-## 📂 Featured Projects
+## 🚀 Featured Projects (Premium Cards)
 
-### 🔷 **Laundry Buddy – Full-Stack Laundry Management System**
-A modern web app for students to manage laundry digitally.  
+### 🔷 **Laundry Buddy – Full-Stack Laundry Automation**
+A complete digital laundry management system for college students.  
 **Tech:** Node.js, Express, JWT, HTML, CSS, JS, PWA  
-🔗 GitHub: https://github.com/Ayuuu-tech/Laundary-Buddy  
+🔗 **GitHub:** https://github.com/Ayuuu-tech/Laundary-Buddy  
 
-### 🤖 **Auto-Reply AI Chatbot**
-Python-based chatbot using rule-based NLP.
+---
+
+### 🤖 **AI Auto-Reply Chatbot**
+Python NLP chatbot with rule-based automation.
 
 ### 🎤 **Big Fox – Voice Assistant**
-Python voice-controlled automation assistant.
+Python voice assistant for productivity automation.
 
 ---
 
-## 🔗 Connect With Me
-<p align="left">
-  <a href="https://github.com/Ayuuu-tech"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/ayushmaan-yadav2006/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+## 📈 GitHub Analytics (Premium Theme)
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayuuu-tech&theme=tokyo-night&area=true&hide_border=true" width="95%">
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Ayuuu-tech&theme=dracula&no-frame=true&row=1&column=6" width="95%">
 </p>
 
 ---
+
+## 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://github.com/Ayuuu-tech">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/ayushmaan-yadav2006/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/eFZglvY.gif" width="250" alt="stars animation"/>
+</p>
+
+<h3 align="center">✨ Building. Learning. Growing. Every Day. ✨</h3>
