@@ -32,38 +32,38 @@
 
     <g fill="#e2e8f0">
       <!-- line 1 -->
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="0.3s" fill="freeze"/>
-        <text x="28" y="78"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> whoami</tspan></text>
+      <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.060;0.120" dur="5s" begin="0s" fill="freeze"/>
+        <text x="28" y="78" xml:space="preserve"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> whoami</tspan></text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="1.0s" fill="freeze"/>
+      <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.200;0.260" dur="5s" begin="0s" fill="freeze"/>
         <text x="28" y="104" fill="#7dd3fc">Ayushmaan Yadav — Software Developer · India</text>
       </g>
 
       <!-- line 2 -->
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="1.6s" fill="freeze"/>
-        <text x="28" y="144"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> cat focus.json</tspan></text>
+      <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.320;0.380" dur="5s" begin="0s" fill="freeze"/>
+        <text x="28" y="144" xml:space="preserve"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> cat focus.json</tspan></text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="2.2s" fill="freeze"/>
+      <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.440;0.500" dur="5s" begin="0s" fill="freeze"/>
         <text x="28" y="170" fill="#94a3b8">{</text>
-        <text x="52" y="192"><tspan fill="#38bdf8">"engineering"</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#e2e8f0">["Backend", "System Design", "DSA"],</tspan></text>
-        <text x="52" y="214"><tspan fill="#38bdf8">"languages"</tspan><tspan fill="#94a3b8">:   </tspan><tspan fill="#e2e8f0">["Java", "TypeScript", "Python", "Dart"],</tspan></text>
-        <text x="52" y="236"><tspan fill="#38bdf8">"platform"</tspan><tspan fill="#94a3b8">:    </tspan><tspan fill="#e2e8f0">["Docker", "AWS", "Linux", "Nginx"],</tspan></text>
-        <text x="52" y="258"><tspan fill="#38bdf8">"exploring"</tspan><tspan fill="#94a3b8">:   </tspan><tspan fill="#e2e8f0">["Distributed Systems", "AI Integrations"]</tspan></text>
+        <text x="52" y="192" xml:space="preserve"><tspan fill="#38bdf8">"engineering"</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#e2e8f0">["Backend", "System Design", "DSA"],</tspan></text>
+        <text x="52" y="214" xml:space="preserve"><tspan fill="#38bdf8">"languages"</tspan><tspan fill="#94a3b8">:   </tspan><tspan fill="#e2e8f0">["Java", "TypeScript", "Python", "Dart"],</tspan></text>
+        <text x="52" y="236" xml:space="preserve"><tspan fill="#38bdf8">"platform"</tspan><tspan fill="#94a3b8">:    </tspan><tspan fill="#e2e8f0">["Docker", "AWS", "Linux", "Nginx"],</tspan></text>
+        <text x="52" y="258" xml:space="preserve"><tspan fill="#38bdf8">"exploring"</tspan><tspan fill="#94a3b8">:   </tspan><tspan fill="#e2e8f0">["Distributed Systems", "AI Integrations"]</tspan></text>
         <text x="28" y="280" fill="#94a3b8">}</text>
       </g>
 
       <!-- line 3 -->
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="3.0s" fill="freeze"/>
-        <text x="28" y="320"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> ./mission --now</tspan></text>
+      <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.600;0.660" dur="5s" begin="0s" fill="freeze"/>
+        <text x="28" y="320" xml:space="preserve"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> ./mission --now</tspan></text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="3.6s" fill="freeze"/>
+      <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.720;0.780" dur="5s" begin="0s" fill="freeze"/>
         <text x="28" y="346" fill="#7dd3fc">Shipping Enercore — production solar intelligence platform</text>
         <text x="28" y="368" fill="#7dd3fc">Goal: build scalable products used by millions</text>
       </g>
 
       <!-- prompt -->
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="4.2s" fill="freeze"/>
-        <text x="28" y="408"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan></text>
+      <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.840;0.900" dur="5s" begin="0s" fill="freeze"/>
+        <text x="28" y="408" xml:space="preserve"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan></text>
         <rect x="58" y="394" width="9" height="19" fill="#22d3ee">
           <animate attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite"/>
         </rect>

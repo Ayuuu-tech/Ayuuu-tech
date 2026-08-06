@@ -232,16 +232,19 @@ role-based access and order lifecycle management.
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=Ayuuu-tech&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=00000000&title_color=22D3EE&text_color=94A3B8&icon_color=38BDF8&ring_color=22D3EE" height="180" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayuuu-tech&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=22D3EE&text_color=94A3B8" height="180" alt="Top languages" />
+<img src="assets/generated/stats.svg" width="860" alt="Contribution telemetry" />
+
+<br/>
+
+<img src="assets/generated/langs.svg" width="860" alt="Language distribution" />
+
+<br/>
+
+<img src="assets/generated/achievements.svg" width="860" alt="Achievement matrix" />
 
 <br/>
 
 <img src="https://streak-stats.demolab.com?user=Ayuuu-tech&hide_border=true&background=00000000&stroke=0EA5E9&ring=22D3EE&fire=38BDF8&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=E2E8F0&sideNums=E2E8F0&dates=64748B" height="180" alt="GitHub streak" />
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=Ayuuu-tech&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" width="900" alt="Trophies" />
 
 <br/>
 
