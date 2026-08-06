@@ -1,0 +1,60 @@
+{
+  "createdAt": "2024-08-25T08:19:11.000Z",
+  "followers": 7,
+  "following": 11,
+  "commits": 2941,
+  "prs": 0,
+  "mergedPrs": 0,
+  "issues": 0,
+  "repoCount": 20,
+  "stars": 34,
+  "forks": 1,
+  "languages": [
+    {
+      "name": "JavaScript",
+      "size": 5.6368644047217416,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "HTML",
+      "size": 3.0436093727607476,
+      "color": "#e34c26"
+    },
+    {
+      "name": "Python",
+      "size": 3.0005220061191142,
+      "color": "#3572A5"
+    },
+    {
+      "name": "CSS",
+      "size": 1.7752726052921712,
+      "color": "#563d7c"
+    },
+    {
+      "name": "C",
+      "size": 1,
+      "color": "#555555"
+    },
+    {
+      "name": "TypeScript",
+      "size": 0.9847407635442363,
+      "color": "#3178c6"
+    },
+    {
+      "name": "Shell",
+      "size": 0.28458310527276043,
+      "color": "#89e051"
+    },
+    {
+      "name": "Java",
+      "size": 0.26821936176750855,
+      "color": "#b07219"
+    },
+    {
+      "name": "Dockerfile",
+      "size": 0.006188380521720053,
+      "color": "#384d54"
+    }
+  ],
+  "cachedAt": "2026-08-06T17:22:33.890Z"
+}
