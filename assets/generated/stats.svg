@@ -30,33 +30,33 @@
     <line x1="26" y1="50" x2="834" y2="50" stroke="#38bdf8" stroke-opacity="0.18"/>
 
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.000;0.150" dur="2s" begin="0s" fill="freeze"/>
-      <text x="30" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">1.8k</text>
+      <text x="30" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">2.9k</text>
       <text x="30" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">TOTAL COMMITS</text>
       <rect x="30" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.050;0.200" dur="2s" begin="0s" fill="freeze"/>
-      <text x="232" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">0</text>
-      <text x="232" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">PULL REQUESTS</text>
+      <text x="232" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">20</text>
+      <text x="232" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">REPOSITORIES</text>
       <rect x="232" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.100;0.250" dur="2s" begin="0s" fill="freeze"/>
-      <text x="434" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">0</text>
-      <text x="434" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">PRS MERGED</text>
+      <text x="434" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">34</text>
+      <text x="434" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">STARS EARNED</text>
       <rect x="434" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.150;0.300" dur="2s" begin="0s" fill="freeze"/>
-      <text x="636" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">0</text>
-      <text x="636" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">ISSUES</text>
+      <text x="636" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">7</text>
+      <text x="636" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">FOLLOWERS</text>
       <rect x="636" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.200;0.350" dur="2s" begin="0s" fill="freeze"/>
-      <text x="30" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">20</text>
-      <text x="30" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">REPOSITORIES</text>
+      <text x="30" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">8</text>
+      <text x="30" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">LANGUAGES</text>
       <rect x="30" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.250;0.400" dur="2s" begin="0s" fill="freeze"/>
-      <text x="232" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">34</text>
-      <text x="232" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">STARS EARNED</text>
+      <text x="232" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">2</text>
+      <text x="232" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">YEARS ACTIVE</text>
       <rect x="232" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.300;0.450" dur="2s" begin="0s" fill="freeze"/>
@@ -65,8 +65,8 @@
       <rect x="434" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.350;0.500" dur="2s" begin="0s" fill="freeze"/>
-      <text x="636" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">7</text>
-      <text x="636" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">FOLLOWERS</text>
+      <text x="636" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">1.5k</text>
+      <text x="636" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">COMMITS / YEAR</text>
       <rect x="636" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
     </g>
 

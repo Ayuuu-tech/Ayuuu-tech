@@ -10,16 +10,16 @@
  *   GITHUB_TOKEN=... USERNAME=Ayuuu-tech node scripts/build-stats.mjs
  */
 
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, readFile, mkdir } from "node:fs/promises";
 
 const USER = process.env.USERNAME || "Ayuuu-tech";
 const TOKEN = process.env.GITHUB_TOKEN;
 const OUT = "assets/generated";
 
-if (!TOKEN) {
-  console.error("GITHUB_TOKEN is required");
-  process.exit(1);
-}
+// With a token we use GraphQL (one round trip, includes private contribution
+// counts). Without one — running locally — we fall back to the public REST API
+// plus the public contributions calendar, so the cards can always be rebuilt.
+const MODE = TOKEN ? "graphql" : "public";
 
 const C = {
   bg0: "#070d1a",
@@ -123,19 +123,19 @@ async function collect() {
   } while (after);
 
   const contrib = base.contributionsCollection;
-  const langBytes = new Map();
 
-  for (const repo of repos) {
+  const colors = new Map();
+  const perRepo = repos.map((repo) => {
+    const langs = {};
     for (const edge of repo.languages.edges) {
-      const prev = langBytes.get(edge.node.name) ?? { size: 0, color: edge.node.color };
-      prev.size += edge.size;
-      prev.color ||= edge.node.color;
-      langBytes.set(edge.node.name, prev);
+      langs[edge.node.name] = edge.size;
+      if (edge.node.color) colors.set(edge.node.name, edge.node.color);
     }
-  }
+    return langs;
+  });
 
-  const languages = [...langBytes.entries()]
-    .map(([name, v]) => ({ name, size: v.size, color: v.color || LANG_FALLBACK }))
+  const languages = [...weighLanguages(perRepo).entries()]
+    .map(([name, size]) => ({ name, size, color: colors.get(name) || GH_COLORS[name] || LANG_FALLBACK }))
     .sort((a, b) => b.size - a.size);
 
   return {
@@ -152,6 +152,111 @@ async function collect() {
     languages,
   };
 }
+
+/* ---------- token-free fallback ---------- */
+
+const UA = { "User-Agent": `${USER}-profile-stats`, Accept: "application/vnd.github+json" };
+
+async function rest(path) {
+  const res = await fetch(`https://api.github.com${path}`, { headers: UA });
+  if (!res.ok) throw new Error(`REST ${path} -> ${res.status}`);
+  return res.json();
+}
+
+/** Total contributions, summed from the public contribution calendar per year. */
+async function scrapeContributions(from) {
+  let total = 0;
+  for (let y = from; y <= new Date().getFullYear(); y++) {
+    const res = await fetch(`https://github.com/users/${USER}/contributions?from=${y}-01-01&to=${y}-12-31`, {
+      headers: { "User-Agent": UA["User-Agent"], "X-Requested-With": "XMLHttpRequest" },
+    });
+    if (!res.ok) continue;
+    const html = await res.text();
+    for (const m of html.matchAll(/data-level="[1-4]"[^>]*>/g)) void m; // levels only mark intensity
+    for (const m of html.matchAll(/(?:data-count|id="contribution-graph-legend")[^>]*/g)) void m;
+    // The calendar exposes the exact per-day number in the tooltip text.
+    for (const m of html.matchAll(/>(\d+)\s+contributions?\s+on/g)) total += Number(m[1]);
+  }
+  return total;
+}
+
+async function collectPublic() {
+  const user = await rest(`/users/${USER}`);
+  const repos = [];
+  for (let page = 1; page <= 5; page++) {
+    const batch = await rest(`/users/${USER}/repos?per_page=100&page=${page}&type=owner&sort=pushed`);
+    repos.push(...batch.filter((r) => !r.fork));
+    if (batch.length < 100) break;
+  }
+
+  const perRepo = [];
+  for (const repo of repos) {
+    try {
+      perRepo.push(await rest(`/repos/${USER}/${repo.name}/languages`));
+    } catch {
+      /* a repo that vanished mid-run should not fail the whole render */
+    }
+  }
+  const langBytes = weighLanguages(perRepo);
+
+  const createdAt = new Date(user.created_at);
+  const commits = await scrapeContributions(createdAt.getFullYear());
+  const prs = await rest(`/search/issues?q=author:${USER}+type:pr&per_page=1`).catch(() => ({ total_count: 0 }));
+  const merged = await rest(`/search/issues?q=author:${USER}+type:pr+is:merged&per_page=1`).catch(() => ({ total_count: 0 }));
+  const issues = await rest(`/search/issues?q=author:${USER}+type:issue&per_page=1`).catch(() => ({ total_count: 0 }));
+
+  return {
+    createdAt,
+    followers: user.followers,
+    following: user.following,
+    commits,
+    prs: prs.total_count,
+    mergedPrs: merged.total_count,
+    issues: issues.total_count,
+    repoCount: repos.length,
+    stars: repos.reduce((n, r) => n + r.stargazers_count, 0),
+    forks: repos.reduce((n, r) => n + r.forks_count, 0),
+    languages: [...langBytes.entries()]
+      .map(([name, size]) => ({ name, size, color: GH_COLORS[name] || LANG_FALLBACK }))
+      .sort((a, b) => b.size - a.size),
+  };
+}
+
+/**
+ * Languages whose byte counts measure generated output, not authored code:
+ * notebook blobs and vendored/exported markup routinely run to tens of MB and
+ * would otherwise bury every language actually written by hand.
+ */
+const EXCLUDED_LANGS = new Set(["Jupyter Notebook", "Roff", "TeX"]);
+
+/**
+ * Each repository gets one equal vote, split across its own languages, rather
+ * than every repo contributing raw bytes. Without this a single data-heavy
+ * repo decides the whole chart — here one repo held 41 MB of notebook output
+ * and 28 MB of generated HTML, which alone read as 96% of the profile.
+ */
+function weighLanguages(perRepo) {
+  const score = new Map();
+  for (const langs of perRepo) {
+    const entries = Object.entries(langs).filter(([name]) => !EXCLUDED_LANGS.has(name));
+    const total = entries.reduce((n, [, size]) => n + size, 0);
+    if (!total) continue;
+    for (const [name, size] of entries) {
+      score.set(name, (score.get(name) ?? 0) + size / total);
+    }
+  }
+  return score;
+}
+
+/** Language colours for the REST path, which does not return them. */
+const GH_COLORS = {
+  Java: "#b07219", Python: "#3572A5", JavaScript: "#f1e05a", TypeScript: "#3178c6",
+  Dart: "#00B4AB", HTML: "#e34c26", CSS: "#563d7c", SCSS: "#c6538c", Shell: "#89e051",
+  C: "#555555", "C++": "#f34b7d", "C#": "#178600", Go: "#00ADD8", Rust: "#dea584",
+  Kotlin: "#A97BFF", Swift: "#F05138", Ruby: "#701516", PHP: "#4F5D95", Vue: "#41b883",
+  Dockerfile: "#384d54", Makefile: "#427819", Jupyter: "#DA5B0B", "Jupyter Notebook": "#DA5B0B",
+  Blade: "#f7523f", Handlebars: "#f7931e", EJS: "#a91e50", Procfile: "#a91e50",
+};
 
 /* ---------- shared SVG chrome ---------- */
 
@@ -201,16 +306,23 @@ ${body}
 
 /* ---------- stats card ---------- */
 
+/** Shared so every card agrees on the same denominator. */
+const activeYears = (d) => Math.max(1, Math.round((Date.now() - d.createdAt) / 31557600000));
+
 function statsCard(d) {
+  const years = activeYears(d);
+
+  // Only surface collaboration counters once there is something to show; a row
+  // of zeroes reads worse than a tighter grid of numbers that are actually real.
   const cells = [
     ["TOTAL COMMITS", compact(d.commits)],
-    ["PULL REQUESTS", compact(d.prs)],
-    ["PRS MERGED", compact(d.mergedPrs)],
-    ["ISSUES", compact(d.issues)],
     ["REPOSITORIES", compact(d.repoCount)],
     ["STARS EARNED", compact(d.stars)],
-    ["FORKS", compact(d.forks)],
     ["FOLLOWERS", compact(d.followers)],
+    ["LANGUAGES", compact(d.languages.length)],
+    ["YEARS ACTIVE", compact(years)],
+    d.prs > 0 ? ["PULL REQUESTS", compact(d.prs)] : ["FORKS", compact(d.forks)],
+    d.issues > 0 ? ["ISSUES", compact(d.issues)] : ["COMMITS / YEAR", compact(Math.round(d.commits / years))],
   ];
 
   const colW = 202;
@@ -277,21 +389,21 @@ ${stacked}
     <clipPath id="langclip"><rect x="${barX}" y="70" width="${barW}" height="14" rx="7"/></clipPath>
 ${legend}`;
 
-  return frame("lg", 860, h, "LANGUAGE DISTRIBUTION", "BY BYTES · OWNED REPOS", body);
+  return frame("lg", 860, h, "LANGUAGE DISTRIBUTION", "REPO-WEIGHTED · GENERATED OUTPUT EXCLUDED", body);
 }
 
 /* ---------- achievements (trophy replacement) ---------- */
 
 function achievements(d) {
-  const years = Math.max(1, Math.floor((Date.now() - d.createdAt) / 31557600000));
+  const years = activeYears(d);
   const tier = (n, steps) => steps.filter((s) => n >= s).length;
   const RANKS = ["—", "C", "B", "A", "S", "S+"];
 
   const items = [
     { label: "COMMITS", value: compact(d.commits), rank: RANKS[tier(d.commits, [1, 100, 500, 2000, 5000])] },
     { label: "REPOSITORIES", value: compact(d.repoCount), rank: RANKS[tier(d.repoCount, [1, 5, 15, 40, 80])] },
-    { label: "PULL REQUESTS", value: compact(d.prs), rank: RANKS[tier(d.prs, [1, 10, 50, 150, 400])] },
-    { label: "ISSUES", value: compact(d.issues), rank: RANKS[tier(d.issues, [1, 5, 25, 80, 200])] },
+    { label: "LANGUAGES", value: compact(d.languages.length), rank: RANKS[tier(d.languages.length, [1, 3, 5, 8, 12])] },
+    { label: "COMMITS / YR", value: compact(Math.round(d.commits / years)), rank: RANKS[tier(Math.round(d.commits / years), [1, 100, 400, 900, 1500])] },
     { label: "STARS", value: compact(d.stars), rank: RANKS[tier(d.stars, [1, 10, 50, 200, 1000])] },
     { label: "FOLLOWERS", value: compact(d.followers), rank: RANKS[tier(d.followers, [1, 10, 50, 200, 1000])] },
     { label: "YEARS ACTIVE", value: `${years}`, rank: RANKS[tier(years, [1, 2, 3, 5, 8])] },
@@ -324,7 +436,28 @@ function achievements(d) {
 
 /* ---------- main ---------- */
 
-const data = await collect();
+/**
+ * The unauthenticated path costs one request per repository, so a rebuild can
+ * hit the 60/hour limit. Cache the last good payload and fall back to it rather
+ * than failing the run and leaving the profile with broken images.
+ */
+const CACHE = `${OUT}/data.json`;
+
+async function load() {
+  try {
+    const fresh = MODE === "graphql" ? await collect() : await collectPublic();
+    await mkdir(OUT, { recursive: true });
+    await writeFile(CACHE, JSON.stringify({ ...fresh, cachedAt: new Date().toISOString() }, null, 2));
+    return fresh;
+  } catch (err) {
+    const cached = JSON.parse(await readFile(CACHE, "utf8").catch(() => "null"));
+    if (!cached) throw err;
+    console.warn(`live fetch failed (${err.message}); rendering from cache of ${cached.cachedAt}`);
+    return { ...cached, createdAt: new Date(cached.createdAt) };
+  }
+}
+
+const data = await load();
 await mkdir(OUT, { recursive: true });
 await Promise.all([
   writeFile(`${OUT}/stats.svg`, statsCard(data)),

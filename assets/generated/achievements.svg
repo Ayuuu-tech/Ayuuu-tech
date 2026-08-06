@@ -33,14 +33,14 @@
       <rect x="26" y="70" width="104" height="104" rx="14" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.3"/>
       <circle cx="78" cy="106" r="22" fill="none" stroke="#0ea5e9" stroke-opacity="0.25" stroke-width="3"/>
       <circle cx="78" cy="106" r="22" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"
-              stroke-dasharray="138" stroke-dashoffset="55.2" transform="rotate(-90 78 106)">
-        <animate attributeName="stroke-dashoffset" values="138;138;55.2;55.2"
+              stroke-dasharray="138" stroke-dashoffset="27.6" transform="rotate(-90 78 106)">
+        <animate attributeName="stroke-dashoffset" values="138;138;27.6;27.6"
                  keyTimes="0;0.000;0.350;1"
                  dur="2s" begin="0s" fill="freeze"/>
       </circle>
       <text x="78" y="112" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif"
-            font-size="18" font-weight="700" fill="#e2e8f0">A</text>
-      <text x="78" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">1.8k</text>
+            font-size="18" font-weight="700" fill="#e2e8f0">S</text>
+      <text x="78" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">2.9k</text>
       <text x="78" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">COMMITS</text>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.050;0.200" dur="2s" begin="0s" fill="freeze"/>
@@ -61,29 +61,29 @@
       <rect x="262" y="70" width="104" height="104" rx="14" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.3"/>
       <circle cx="314" cy="106" r="22" fill="none" stroke="#0ea5e9" stroke-opacity="0.25" stroke-width="3"/>
       <circle cx="314" cy="106" r="22" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"
-              stroke-dasharray="138" stroke-dashoffset="138.0" transform="rotate(-90 314 106)">
-        <animate attributeName="stroke-dashoffset" values="138;138;138.0;138.0"
+              stroke-dasharray="138" stroke-dashoffset="27.6" transform="rotate(-90 314 106)">
+        <animate attributeName="stroke-dashoffset" values="138;138;27.6;27.6"
                  keyTimes="0;0.100;0.450;1"
                  dur="2s" begin="0s" fill="freeze"/>
       </circle>
       <text x="314" y="112" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif"
-            font-size="18" font-weight="700" fill="#e2e8f0">—</text>
-      <text x="314" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">0</text>
-      <text x="314" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">PULL REQUESTS</text>
+            font-size="18" font-weight="700" fill="#e2e8f0">S</text>
+      <text x="314" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">8</text>
+      <text x="314" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">LANGUAGES</text>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.150;0.300" dur="2s" begin="0s" fill="freeze"/>
       <rect x="380" y="70" width="104" height="104" rx="14" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.3"/>
       <circle cx="432" cy="106" r="22" fill="none" stroke="#0ea5e9" stroke-opacity="0.25" stroke-width="3"/>
       <circle cx="432" cy="106" r="22" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"
-              stroke-dasharray="138" stroke-dashoffset="138.0" transform="rotate(-90 432 106)">
-        <animate attributeName="stroke-dashoffset" values="138;138;138.0;138.0"
+              stroke-dasharray="138" stroke-dashoffset="0.0" transform="rotate(-90 432 106)">
+        <animate attributeName="stroke-dashoffset" values="138;138;0.0;0.0"
                  keyTimes="0;0.150;0.500;1"
                  dur="2s" begin="0s" fill="freeze"/>
       </circle>
       <text x="432" y="112" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif"
-            font-size="18" font-weight="700" fill="#e2e8f0">—</text>
-      <text x="432" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">0</text>
-      <text x="432" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">ISSUES</text>
+            font-size="18" font-weight="700" fill="#e2e8f0">S+</text>
+      <text x="432" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">2.9k</text>
+      <text x="432" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">COMMITS / YR</text>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.200;0.350" dur="2s" begin="0s" fill="freeze"/>
       <rect x="498" y="70" width="104" height="104" rx="14" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.3"/>
