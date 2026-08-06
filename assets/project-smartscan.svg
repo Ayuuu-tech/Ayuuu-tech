@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="240" viewBox="0 0 440 240" role="img" aria-label="SMARTSCAN">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070d1a"/>
+      <stop offset="100%" stop-color="#02040a"/>
+    </linearGradient>
+    <linearGradient id="pt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dd3fc"/><stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="pscan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="pgrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V22" fill="none" stroke="#38bdf8" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="pglow" x="-30%" y="-40%" width="160%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="pclip"><rect width="440" height="240" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#pclip)" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace">
+    <rect width="440" height="240" fill="url(#pbg)"/>
+    <rect width="440" height="240" fill="url(#pgrid)"/>
+
+    <g stroke="#22d3ee" stroke-width="1.6" fill="none" opacity="0.8">
+      <path d="M18 34V18h16"/><path d="M422 206v16h-16"/>
+    </g>
+
+    <text x="26" y="30" font-size="11" letter-spacing="2.5" fill="#38bdf8" fill-opacity="0.65">PROJECT 02</text>
+
+    <rect x="300" y="16" width="122" height="22" rx="11" fill="#0ea5e9" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.45"/>
+    <circle cx="316" cy="27" r="3.6" fill="#22d3ee"><animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="328" y="31" font-size="10" letter-spacing="1.6" fill="#7dd3fc">ACTIVE</text>
+
+    <text x="26" y="72" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="27"
+          font-weight="700" letter-spacing="1.5" fill="url(#pt)" filter="url(#pglow)">SMARTSCAN</text>
+    <text x="26" y="96" font-size="11.5" letter-spacing="1.2" fill="#94a3b8">AI Powered Card Scanner</text>
+
+    <line x1="26" y1="114" x2="414" y2="114" stroke="#38bdf8" stroke-opacity="0.18"/>
+
+    <text x="26" y="136" font-size="10.5" letter-spacing="2" fill="#38bdf8" fill-opacity="0.6">STACK</text>
+    <text x="26" y="156" font-size="11.5" fill="#e2e8f0">Flutter · NestJS · PostgreSQL · OCR</text>
+
+    <text x="26" y="184" font-size="10.5" letter-spacing="2" fill="#38bdf8" fill-opacity="0.6">CAPABILITIES</text>
+    <g font-size="11.5" fill="#cbd5e1">
+      <text x="26" y="204"><tspan fill="#22d3ee">▸</tspan> On-device OCR pipeline</text>
+      <text x="26" y="222"><tspan fill="#22d3ee">▸</tspan> Structured data extraction</text>
+      <text x="248" y="204"><tspan fill="#22d3ee">▸</tspan> Contact sync API</text>
+    </g>
+
+    <rect x="0" y="0" width="140" height="2" fill="url(#pscan)">
+      <animate attributeName="y" values="0;238;0" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="0;300;0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0.5" y="0.5" width="439" height="239" rx="18" fill="none" stroke="#0ea5e9" stroke-opacity="0.45"/>
+  </g>
+</svg>

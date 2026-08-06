@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="Ayushmaan Yadav — Software Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04060c"/>
+      <stop offset="55%" stop-color="#060a16"/>
+      <stop offset="100%" stop-color="#02040a"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="glassFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0ea5e9" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+
+    <radialGradient id="halo" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="typeClip">
+      <rect x="286" y="216" width="0" height="34">
+        <animate attributeName="width" values="0;0;372;372;0" keyTimes="0;0.06;0.55;0.9;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="frameClip">
+      <rect x="0" y="0" width="1000" height="320" rx="26"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frameClip)">
+    <rect width="1000" height="320" fill="url(#bg)"/>
+    <rect width="1000" height="320" fill="url(#grid)"/>
+    <rect width="1000" height="320" fill="url(#halo)"/>
+
+    <!-- ambient particles -->
+    <g fill="#38bdf8">
+      <circle cx="120" cy="70" r="1.8" opacity="0.7"><animate attributeName="cy" values="70;40;70" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.9;0.2" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="240" r="1.6" opacity="0.6"><animate attributeName="cy" values="240;210;240" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.15;0.8;0.15" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="760" cy="60" r="1.4" opacity="0.5"><animate attributeName="cy" values="60;92;60" dur="11s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="260" r="1.4" opacity="0.5"><animate attributeName="cy" values="260;230;260" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="520" cy="42" r="1.2" opacity="0.4"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- corner brackets -->
+    <g stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.85" filter="url(#softGlow)">
+      <path d="M28 66V34h32"/>
+      <path d="M972 66V34h-32"/>
+      <path d="M28 254v32h32"/>
+      <path d="M972 254v32h-32"/>
+    </g>
+
+    <!-- glass panel -->
+    <rect x="60" y="52" width="880" height="216" rx="20" fill="url(#glassFill)" stroke="#38bdf8" stroke-opacity="0.28"/>
+
+    <!-- status bar -->
+    <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="12" letter-spacing="2">
+      <circle cx="92" cy="82" r="4.5" fill="#22d3ee"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></circle>
+      <text x="108" y="86" fill="#7dd3fc" opacity="0.85">SYSTEM ONLINE</text>
+      <text x="908" y="86" fill="#38bdf8" opacity="0.6" text-anchor="end">IN · UTC+05:30</text>
+    </g>
+    <line x1="92" y1="100" x2="908" y2="100" stroke="#38bdf8" stroke-opacity="0.18"/>
+
+    <!-- name -->
+    <text x="500" y="166" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif"
+          font-size="60" font-weight="700" letter-spacing="4" fill="url(#neon)" filter="url(#glow)">
+      AYUSHMAAN YADAV
+    </text>
+
+    <text x="500" y="194" text-anchor="middle" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace"
+          font-size="13" letter-spacing="7" fill="#94a3b8">
+      S O F T W A R E &#160; D E V E L O P E R
+    </text>
+
+    <!-- typing line -->
+    <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="17">
+      <text x="252" y="241" fill="#22d3ee">&#187;</text>
+      <g clip-path="url(#typeClip)">
+        <text x="286" y="241" fill="#e2e8f0">building scalable systems, one commit at a time</text>
+      </g>
+      <rect y="224" width="9" height="20" fill="#22d3ee">
+        <animate attributeName="x" values="286;286;658;658;286" keyTimes="0;0.06;0.55;0.9;1" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- scan line -->
+    <rect x="60" y="52" width="880" height="2" fill="url(#scan)" opacity="0.85">
+      <animate attributeName="y" values="52;266;52" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="1" y="1" width="998" height="318" rx="26" fill="none" stroke="#0ea5e9" stroke-opacity="0.45"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="26" viewBox="0 0 900 26" role="img" aria-label="separator">
+  <defs>
+    <linearGradient id="dl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.85"/>
+      <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a5f3fc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dg" x="-20%" y="-200%" width="140%" height="500%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="12" width="900" height="1.6" fill="url(#dl)" filter="url(#dg)"/>
+  <rect y="11.2" width="150" height="3" rx="1.5" fill="url(#dp)" filter="url(#dg)">
+    <animate attributeName="x" values="-150;900;-150" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <g fill="#22d3ee" filter="url(#dg)">
+    <path d="M450 6l7 7-7 7-7-7z"/>
+    <circle cx="424" cy="13" r="2.2" opacity="0.7"/>
+    <circle cx="476" cy="13" r="2.2" opacity="0.7"/>
+  </g>
+</svg>

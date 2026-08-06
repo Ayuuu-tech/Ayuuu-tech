@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="440" viewBox="0 0 820 440" role="img" aria-label="Terminal profile card">
+  <defs>
+    <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05070e"/>
+      <stop offset="100%" stop-color="#02030a"/>
+    </linearGradient>
+    <linearGradient id="tbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#070c17"/>
+    </linearGradient>
+    <filter id="tglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="tgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#38bdf8" stroke-opacity="0.05"/>
+    </pattern>
+    <clipPath id="tclip"><rect width="820" height="440" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#tclip)" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="14.5">
+    <rect width="820" height="440" fill="url(#tbg)"/>
+    <rect width="820" height="440" fill="url(#tgrid)"/>
+
+    <!-- title bar -->
+    <rect width="820" height="40" fill="url(#tbar)"/>
+    <line x1="0" y1="40" x2="820" y2="40" stroke="#38bdf8" stroke-opacity="0.25"/>
+    <circle cx="26" cy="20" r="6" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <circle cx="48" cy="20" r="6" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <circle cx="70" cy="20" r="6" fill="#0ea5e9" opacity="0.9"/>
+    <text x="410" y="25" text-anchor="middle" fill="#7dd3fc" font-size="12.5" letter-spacing="2">ayushmaan@dev  ~  zsh</text>
+
+    <g fill="#e2e8f0">
+      <!-- line 1 -->
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="0.3s" fill="freeze"/>
+        <text x="28" y="78"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> whoami</tspan></text>
+      </g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="1.0s" fill="freeze"/>
+        <text x="28" y="104" fill="#7dd3fc">Ayushmaan Yadav — Software Developer · India</text>
+      </g>
+
+      <!-- line 2 -->
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="1.6s" fill="freeze"/>
+        <text x="28" y="144"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> cat focus.json</tspan></text>
+      </g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="2.2s" fill="freeze"/>
+        <text x="28" y="170" fill="#94a3b8">{</text>
+        <text x="52" y="192"><tspan fill="#38bdf8">"engineering"</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#e2e8f0">["Backend", "System Design", "DSA"],</tspan></text>
+        <text x="52" y="214"><tspan fill="#38bdf8">"languages"</tspan><tspan fill="#94a3b8">:   </tspan><tspan fill="#e2e8f0">["Java", "TypeScript", "Python", "Dart"],</tspan></text>
+        <text x="52" y="236"><tspan fill="#38bdf8">"platform"</tspan><tspan fill="#94a3b8">:    </tspan><tspan fill="#e2e8f0">["Docker", "AWS", "Linux", "Nginx"],</tspan></text>
+        <text x="52" y="258"><tspan fill="#38bdf8">"exploring"</tspan><tspan fill="#94a3b8">:   </tspan><tspan fill="#e2e8f0">["Distributed Systems", "AI Integrations"]</tspan></text>
+        <text x="28" y="280" fill="#94a3b8">}</text>
+      </g>
+
+      <!-- line 3 -->
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="3.0s" fill="freeze"/>
+        <text x="28" y="320"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan><tspan fill="#94a3b8"> ./mission --now</tspan></text>
+      </g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="3.6s" fill="freeze"/>
+        <text x="28" y="346" fill="#7dd3fc">Shipping Enercore — production solar intelligence platform</text>
+        <text x="28" y="368" fill="#7dd3fc">Goal: build scalable products used by millions</text>
+      </g>
+
+      <!-- prompt -->
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="4.2s" fill="freeze"/>
+        <text x="28" y="408"><tspan fill="#22d3ee">➜</tspan><tspan fill="#60a5fa"> ~</tspan></text>
+        <rect x="58" y="394" width="9" height="19" fill="#22d3ee">
+          <animate attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+
+    <rect x="0.5" y="0.5" width="819" height="439" rx="16" fill="none" stroke="#0ea5e9" stroke-opacity="0.45" filter="url(#tglow)"/>
+  </g>
+</svg>
