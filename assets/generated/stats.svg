@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="250" viewBox="0 0 860 250" role="img" aria-label="CONTRIBUTION TELEMETRY">
+
+  <defs>
+    <linearGradient id="bg-st" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070d1a"/><stop offset="100%" stop-color="#02040a"/>
+    </linearGradient>
+    <linearGradient id="ttl-st" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dd3fc"/><stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="scan-st" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid-st" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#38bdf8" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="glow-st" x="-30%" y="-40%" width="160%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace">
+    <rect width="860" height="250" rx="18" fill="url(#bg-st)"/>
+    <rect width="860" height="250" rx="18" fill="url(#grid-st)"/>
+
+    <text x="26" y="36" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="17"
+          font-weight="700" letter-spacing="3" fill="url(#ttl-st)" filter="url(#glow-st)">CONTRIBUTION TELEMETRY</text>
+    <text x="834" y="36" text-anchor="end" font-size="10" letter-spacing="2" fill="#64748b">@AYUUU-TECH · LIVE</text>
+    <line x1="26" y1="50" x2="834" y2="50" stroke="#38bdf8" stroke-opacity="0.18"/>
+
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.000;0.150" dur="2s" begin="0s" fill="freeze"/>
+      <text x="30" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">1.8k</text>
+      <text x="30" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">TOTAL COMMITS</text>
+      <rect x="30" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.050;0.200" dur="2s" begin="0s" fill="freeze"/>
+      <text x="232" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">0</text>
+      <text x="232" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">PULL REQUESTS</text>
+      <rect x="232" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.100;0.250" dur="2s" begin="0s" fill="freeze"/>
+      <text x="434" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">0</text>
+      <text x="434" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">PRS MERGED</text>
+      <rect x="434" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.150;0.300" dur="2s" begin="0s" fill="freeze"/>
+      <text x="636" y="96" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">0</text>
+      <text x="636" y="116" font-size="10" letter-spacing="1.8" fill="#94a3b8">ISSUES</text>
+      <rect x="636" y="126" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.200;0.350" dur="2s" begin="0s" fill="freeze"/>
+      <text x="30" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">20</text>
+      <text x="30" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">REPOSITORIES</text>
+      <rect x="30" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.250;0.400" dur="2s" begin="0s" fill="freeze"/>
+      <text x="232" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">34</text>
+      <text x="232" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">STARS EARNED</text>
+      <rect x="232" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.300;0.450" dur="2s" begin="0s" fill="freeze"/>
+      <text x="434" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">1</text>
+      <text x="434" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">FORKS</text>
+      <rect x="434" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.350;0.500" dur="2s" begin="0s" fill="freeze"/>
+      <text x="636" y="180" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">7</text>
+      <text x="636" y="200" font-size="10" letter-spacing="1.8" fill="#94a3b8">FOLLOWERS</text>
+      <rect x="636" y="210" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.75"/>
+    </g>
+
+    <rect x="0" y="0" width="160" height="2" fill="url(#scan-st)">
+      <animate attributeName="y" values="0;248;0" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="0;700;0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0.5" y="0.5" width="859" height="249" rx="18" fill="none" stroke="#0ea5e9" stroke-opacity="0.45"/>
+  </g>
+</svg>

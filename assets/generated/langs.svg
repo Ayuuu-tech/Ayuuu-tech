@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="302" viewBox="0 0 860 302" role="img" aria-label="LANGUAGE DISTRIBUTION">
+
+  <defs>
+    <linearGradient id="bg-lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070d1a"/><stop offset="100%" stop-color="#02040a"/>
+    </linearGradient>
+    <linearGradient id="ttl-lg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dd3fc"/><stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="scan-lg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid-lg" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#38bdf8" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="glow-lg" x="-30%" y="-40%" width="160%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace">
+    <rect width="860" height="302" rx="18" fill="url(#bg-lg)"/>
+    <rect width="860" height="302" rx="18" fill="url(#grid-lg)"/>
+
+    <text x="26" y="36" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="17"
+          font-weight="700" letter-spacing="3" fill="url(#ttl-lg)" filter="url(#glow-lg)">LANGUAGE DISTRIBUTION</text>
+    <text x="834" y="36" text-anchor="end" font-size="10" letter-spacing="2" fill="#64748b">BY BYTES · OWNED REPOS</text>
+    <line x1="26" y1="50" x2="834" y2="50" stroke="#38bdf8" stroke-opacity="0.18"/>
+
+    <rect x="26" y="70" width="808" height="14" rx="7" fill="#0b1220"/>
+    <g clip-path="url(#langclip)">
+    <rect x="26.0" y="70" width="461.1" height="14" fill="#DA5B0B" opacity="0.9"/>
+    <rect x="487.1" y="70" width="318.6" height="14" fill="#e34c26" opacity="0.9"/>
+    <rect x="805.7" y="70" width="18.0" height="14" fill="#f1e05a" opacity="0.9"/>
+    <rect x="823.7" y="70" width="3.8" height="14" fill="#b07219" opacity="0.9"/>
+    <rect x="827.5" y="70" width="3.5" height="14" fill="#663399" opacity="0.9"/>
+    <rect x="831.0" y="70" width="2.6" height="14" fill="#3178c6" opacity="0.9"/>
+    <rect x="833.6" y="70" width="2.0" height="14" fill="#3572A5" opacity="0.9"/>
+    <rect x="835.6" y="70" width="2.0" height="14" fill="#89e051" opacity="0.9"/>
+    </g>
+    <clipPath id="langclip"><rect x="26" y="70" width="808" height="14" rx="7"/></clipPath>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.000;0.150" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="31" cy="117" r="5" fill="#DA5B0B"/>
+      <text x="44" y="121" font-size="12.5" fill="#e2e8f0">Jupyter Notebook</text>
+      <text x="366" y="121" text-anchor="end" font-size="12.5" fill="#22d3ee">57.1%</text>
+      <rect x="44" y="128" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="44" y="128" width="194.0" height="4" rx="2" fill="#DA5B0B" opacity="0.85">
+        <animate attributeName="width" values="0;0;194.0;194.0" keyTimes="0;0.000;0.350;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.050;0.200" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="441" cy="117" r="5" fill="#e34c26"/>
+      <text x="454" y="121" font-size="12.5" fill="#e2e8f0">HTML</text>
+      <text x="776" y="121" text-anchor="end" font-size="12.5" fill="#22d3ee">39.4%</text>
+      <rect x="454" y="128" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="454" y="128" width="134.0" height="4" rx="2" fill="#e34c26" opacity="0.85">
+        <animate attributeName="width" values="0;0;134.0;134.0" keyTimes="0;0.050;0.400;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.100;0.250" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="31" cy="159" r="5" fill="#f1e05a"/>
+      <text x="44" y="163" font-size="12.5" fill="#e2e8f0">JavaScript</text>
+      <text x="366" y="163" text-anchor="end" font-size="12.5" fill="#22d3ee">2.2%</text>
+      <rect x="44" y="170" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="44" y="170" width="7.6" height="4" rx="2" fill="#f1e05a" opacity="0.85">
+        <animate attributeName="width" values="0;0;7.6;7.6" keyTimes="0;0.100;0.450;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.150;0.300" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="441" cy="159" r="5" fill="#b07219"/>
+      <text x="454" y="163" font-size="12.5" fill="#e2e8f0">Java</text>
+      <text x="776" y="163" text-anchor="end" font-size="12.5" fill="#22d3ee">0.5%</text>
+      <rect x="454" y="170" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="454" y="170" width="3.0" height="4" rx="2" fill="#b07219" opacity="0.85">
+        <animate attributeName="width" values="0;0;3.0;3.0" keyTimes="0;0.150;0.500;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.200;0.350" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="31" cy="201" r="5" fill="#663399"/>
+      <text x="44" y="205" font-size="12.5" fill="#e2e8f0">CSS</text>
+      <text x="366" y="205" text-anchor="end" font-size="12.5" fill="#22d3ee">0.4%</text>
+      <rect x="44" y="212" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="44" y="212" width="3.0" height="4" rx="2" fill="#663399" opacity="0.85">
+        <animate attributeName="width" values="0;0;3.0;3.0" keyTimes="0;0.200;0.550;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.250;0.400" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="441" cy="201" r="5" fill="#3178c6"/>
+      <text x="454" y="205" font-size="12.5" fill="#e2e8f0">TypeScript</text>
+      <text x="776" y="205" text-anchor="end" font-size="12.5" fill="#22d3ee">0.3%</text>
+      <rect x="454" y="212" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="454" y="212" width="3.0" height="4" rx="2" fill="#3178c6" opacity="0.85">
+        <animate attributeName="width" values="0;0;3.0;3.0" keyTimes="0;0.250;0.600;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.300;0.450" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="31" cy="243" r="5" fill="#3572A5"/>
+      <text x="44" y="247" font-size="12.5" fill="#e2e8f0">Python</text>
+      <text x="366" y="247" text-anchor="end" font-size="12.5" fill="#22d3ee">0.0%</text>
+      <rect x="44" y="254" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="44" y="254" width="3.0" height="4" rx="2" fill="#3572A5" opacity="0.85">
+        <animate attributeName="width" values="0;0;3.0;3.0" keyTimes="0;0.300;0.650;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.350;0.500" dur="2s" begin="0s" fill="freeze"/>
+      <circle cx="441" cy="243" r="5" fill="#89e051"/>
+      <text x="454" y="247" font-size="12.5" fill="#e2e8f0">Shell</text>
+      <text x="776" y="247" text-anchor="end" font-size="12.5" fill="#22d3ee">0.0%</text>
+      <rect x="454" y="254" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
+      <rect x="454" y="254" width="3.0" height="4" rx="2" fill="#89e051" opacity="0.85">
+        <animate attributeName="width" values="0;0;3.0;3.0" keyTimes="0;0.350;0.700;1" dur="2s" begin="0s" fill="freeze"/>
+      </rect>
+    </g>
+
+    <rect x="0" y="0" width="160" height="2" fill="url(#scan-lg)">
+      <animate attributeName="y" values="0;300;0" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="0;700;0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0.5" y="0.5" width="859" height="301" rx="18" fill="none" stroke="#0ea5e9" stroke-opacity="0.45"/>
+  </g>
+</svg>
