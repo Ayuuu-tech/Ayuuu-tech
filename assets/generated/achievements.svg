@@ -40,7 +40,7 @@
       </circle>
       <text x="78" y="112" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif"
             font-size="18" font-weight="700" fill="#e2e8f0">A</text>
-      <text x="78" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">1.7k</text>
+      <text x="78" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">1.6k</text>
       <text x="78" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">COMMITS</text>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.050;0.200" dur="2s" begin="0s" fill="freeze"/>
@@ -82,7 +82,7 @@
       </circle>
       <text x="432" y="112" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif"
             font-size="18" font-weight="700" fill="#e2e8f0">A</text>
-      <text x="432" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">833</text>
+      <text x="432" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">802</text>
       <text x="432" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">COMMITS / YR</text>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.200;0.350" dur="2s" begin="0s" fill="freeze"/>
