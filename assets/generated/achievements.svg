@@ -110,7 +110,7 @@
       </circle>
       <text x="668" y="112" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif"
             font-size="18" font-weight="700" fill="#e2e8f0">B</text>
-      <text x="668" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">10</text>
+      <text x="668" y="146" text-anchor="middle" font-size="13" fill="#22d3ee">11</text>
       <text x="668" y="164" text-anchor="middle" font-size="8.5" letter-spacing="1" fill="#94a3b8">FOLLOWERS</text>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.300;0.450" dur="2s" begin="0s" fill="freeze"/>
