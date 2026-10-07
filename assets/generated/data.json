@@ -2,7 +2,7 @@
   "createdAt": "2024-08-25T08:19:11.000Z",
   "followers": 9,
   "following": 13,
-  "commits": 1332,
+  "commits": 2250,
   "prs": 0,
   "mergedPrs": 0,
   "issues": 0,
@@ -17,7 +17,7 @@
     },
     {
       "name": "Python",
-      "size": 4.000522006119114,
+      "size": 3.9013138086342516,
       "color": "#3572A5"
     },
     {
@@ -41,14 +41,14 @@
       "color": "#3178c6"
     },
     {
+      "name": "Java",
+      "size": 0.3673397553241714,
+      "color": "#b07219"
+    },
+    {
       "name": "Shell",
       "size": 0.28490193087748183,
       "color": "#89e051"
-    },
-    {
-      "name": "Java",
-      "size": 0.2681315578393088,
-      "color": "#b07219"
     },
     {
       "name": "Dockerfile",
@@ -56,5 +56,5 @@
       "color": "#384d54"
     }
   ],
-  "cachedAt": "2026-10-07T13:24:40.199Z"
+  "cachedAt": "2026-10-07T23:05:43.093Z"
 }

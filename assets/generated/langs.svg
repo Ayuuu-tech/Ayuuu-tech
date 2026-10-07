@@ -32,13 +32,13 @@
     <rect x="26" y="70" width="808" height="14" rx="7" fill="#0b1220"/>
     <g clip-path="url(#langclip)">
     <rect x="26.0" y="70" width="268.0" height="14" fill="#f1e05a" opacity="0.9"/>
-    <rect x="294.0" y="70" width="190.2" height="14" fill="#3572A5" opacity="0.9"/>
-    <rect x="484.2" y="70" width="144.7" height="14" fill="#e34c26" opacity="0.9"/>
-    <rect x="628.9" y="70" width="84.4" height="14" fill="#663399" opacity="0.9"/>
-    <rect x="713.3" y="70" width="47.5" height="14" fill="#555555" opacity="0.9"/>
-    <rect x="760.9" y="70" width="46.8" height="14" fill="#3178c6" opacity="0.9"/>
-    <rect x="807.7" y="70" width="13.5" height="14" fill="#89e051" opacity="0.9"/>
-    <rect x="821.3" y="70" width="12.7" height="14" fill="#b07219" opacity="0.9"/>
+    <rect x="294.0" y="70" width="185.5" height="14" fill="#3572A5" opacity="0.9"/>
+    <rect x="479.5" y="70" width="144.7" height="14" fill="#e34c26" opacity="0.9"/>
+    <rect x="624.2" y="70" width="84.4" height="14" fill="#663399" opacity="0.9"/>
+    <rect x="708.6" y="70" width="47.5" height="14" fill="#555555" opacity="0.9"/>
+    <rect x="756.2" y="70" width="46.8" height="14" fill="#3178c6" opacity="0.9"/>
+    <rect x="803.0" y="70" width="17.5" height="14" fill="#b07219" opacity="0.9"/>
+    <rect x="820.5" y="70" width="13.5" height="14" fill="#89e051" opacity="0.9"/>
     </g>
     <clipPath id="langclip"><rect x="26" y="70" width="808" height="14" rx="7"/></clipPath>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.000;0.150" dur="2s" begin="0s" fill="freeze"/>
@@ -53,10 +53,10 @@
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.050;0.200" dur="2s" begin="0s" fill="freeze"/>
       <circle cx="441" cy="117" r="5" fill="#3572A5"/>
       <text x="454" y="121" font-size="12.5" fill="#e2e8f0">Python</text>
-      <text x="776" y="121" text-anchor="end" font-size="12.5" fill="#22d3ee">23.5%</text>
+      <text x="776" y="121" text-anchor="end" font-size="12.5" fill="#22d3ee">23.0%</text>
       <rect x="454" y="128" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
-      <rect x="454" y="128" width="80.0" height="4" rx="2" fill="#3572A5" opacity="0.85">
-        <animate attributeName="width" values="0;0;80.0;80.0" keyTimes="0;0.050;0.400;1" dur="2s" begin="0s" fill="freeze"/>
+      <rect x="454" y="128" width="78.1" height="4" rx="2" fill="#3572A5" opacity="0.85">
+        <animate attributeName="width" values="0;0;78.1;78.1" keyTimes="0;0.050;0.400;1" dur="2s" begin="0s" fill="freeze"/>
       </rect>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.100;0.250" dur="2s" begin="0s" fill="freeze"/>
@@ -96,21 +96,21 @@
       </rect>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.300;0.450" dur="2s" begin="0s" fill="freeze"/>
-      <circle cx="31" cy="243" r="5" fill="#89e051"/>
-      <text x="44" y="247" font-size="12.5" fill="#e2e8f0">Shell</text>
-      <text x="366" y="247" text-anchor="end" font-size="12.5" fill="#22d3ee">1.7%</text>
+      <circle cx="31" cy="243" r="5" fill="#b07219"/>
+      <text x="44" y="247" font-size="12.5" fill="#e2e8f0">Java</text>
+      <text x="366" y="247" text-anchor="end" font-size="12.5" fill="#22d3ee">2.2%</text>
       <rect x="44" y="254" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
-      <rect x="44" y="254" width="5.7" height="4" rx="2" fill="#89e051" opacity="0.85">
-        <animate attributeName="width" values="0;0;5.7;5.7" keyTimes="0;0.300;0.650;1" dur="2s" begin="0s" fill="freeze"/>
+      <rect x="44" y="254" width="7.3" height="4" rx="2" fill="#b07219" opacity="0.85">
+        <animate attributeName="width" values="0;0;7.3;7.3" keyTimes="0;0.300;0.650;1" dur="2s" begin="0s" fill="freeze"/>
       </rect>
     </g>
     <g opacity="1"><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.350;0.500" dur="2s" begin="0s" fill="freeze"/>
-      <circle cx="441" cy="243" r="5" fill="#b07219"/>
-      <text x="454" y="247" font-size="12.5" fill="#e2e8f0">Java</text>
-      <text x="776" y="247" text-anchor="end" font-size="12.5" fill="#22d3ee">1.6%</text>
+      <circle cx="441" cy="243" r="5" fill="#89e051"/>
+      <text x="454" y="247" font-size="12.5" fill="#e2e8f0">Shell</text>
+      <text x="776" y="247" text-anchor="end" font-size="12.5" fill="#22d3ee">1.7%</text>
       <rect x="454" y="254" width="322" height="4" rx="2" fill="#0ea5e9" fill-opacity="0.12"/>
-      <rect x="454" y="254" width="5.4" height="4" rx="2" fill="#b07219" opacity="0.85">
-        <animate attributeName="width" values="0;0;5.4;5.4" keyTimes="0;0.350;0.700;1" dur="2s" begin="0s" fill="freeze"/>
+      <rect x="454" y="254" width="5.7" height="4" rx="2" fill="#89e051" opacity="0.85">
+        <animate attributeName="width" values="0;0;5.7;5.7" keyTimes="0;0.350;0.700;1" dur="2s" begin="0s" fill="freeze"/>
       </rect>
     </g>
 
