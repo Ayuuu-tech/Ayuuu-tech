@@ -1,6 +1,6 @@
 {
   "createdAt": "2024-08-25T08:19:11.000Z",
-  "followers": 9,
+  "followers": 10,
   "following": 13,
   "commits": 2001,
   "prs": 0,
@@ -56,5 +56,5 @@
       "color": "#384d54"
     }
   ],
-  "cachedAt": "2026-11-09T06:30:16.797Z"
+  "cachedAt": "2026-11-09T22:22:09.470Z"
 }
